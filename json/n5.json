@@ -1,0 +1,771 @@
+[
+{
+"sectionname": "numbers",
+"characters": [
+  {
+    "kanji": "一",
+    "translation": "one",
+    "kun": [{"word": "ひと/つ"}],
+    "on": [{"word": "いち"},{"word": "いつ"}]
+  },
+
+  {
+    "kanji": "二",
+    "translation": "two",
+    "kun": [{"word": "ふた/つ"}],
+    "on": [{"word": "に"}]
+  },
+
+  {
+    "kanji": "三",
+    "translation": "three",
+    "kun": [{"word": "み/っつ"}],
+    "on": [{"word": "さん"}]
+  },
+
+  {
+    "kanji": "四",
+    "translation": "four",
+    "kun": [{"word": "よ/っつ"},{"word": "ゆ/つ"},{"word": "よん"}],
+    "on": [{"word": "し"}]
+  },
+
+  {
+    "kanji": "五",
+    "translation": "five",
+    "kun": [{"word": "いつ/つ"}],
+    "on": [{"word": "ご"}]
+  },
+
+  {
+    "kanji": "六",
+    "translation": "six",
+    "kun": [{"word": "む/っつ"},{"word": "む/つ"},{"word": "むい"}],
+    "on": [{"word": "ろく"}]
+  },
+
+  {
+    "kanji": "七",
+    "translation": "seven",
+    "kun": [{"word": "なな/つ"},{"word": "なの"}],
+    "on": [{"word": "しち"}]
+  },
+
+  {
+    "kanji": "八",
+    "translation": "eight",
+    "kun": [{"word": "や/っつ"},{"word": "や/つ"},{"word": "よう"}],
+    "on": [{"word": "はち"}]
+  },
+
+  {
+    "kanji": "九",
+    "translation": "nine",
+    "kun": [{"word": "ここの/つ"}],
+    "on": [{"word": "きゅう"},{"word": "く"}]
+  },
+
+  {
+    "kanji": "十",
+    "translation": "ten, cross",
+    "kun": [{"word": "とお"},{"word": "と"}],
+    "on": [{"word": "じゅう"},{"word": "じ"}]
+  },
+
+  {
+    "kanji": "百",
+    "translation": "hundred",
+    "kun": [],
+    "on": [{"word": "ひゃく"}]
+  },
+
+  {
+    "kanji": "千",
+    "translation": "thousand",
+    "kun": [{"word": "ち"}],
+    "on": [{"word": "せん"}]
+  },
+
+  {
+    "kanji": "万",
+    "translation": "ten thousand, all, many",
+    "kun": [],
+    "on": [{"word": "まん"},{"word": "ばん"}]
+  }
+]},
+
+{
+"sectionname": "nature",
+"characters": [
+  {
+    "kanji": "山",
+    "translation": "mountain",
+    "kun": [{"word": "やま"}],
+    "on": [{"word": "さん"}]
+  },
+
+  {
+    "kanji": "天",
+    "translation": "sky",
+    "kun": [{"word": "あめ"},{"word": "あま"}],
+    "on": [{"word": "てん"}]
+  },
+
+  {
+    "kanji": "木",
+    "translation": "tree, wood",
+    "kun": [{"word": "き"},{"word": "こ"}],
+    "on": [{"word": "ぼく"},{"word": "もく"}]
+  },
+
+  {
+    "kanji": "川",
+    "translation": "river",
+    "kun": [{"word": "かわ"}],
+    "on": [{"word": "せん"}]
+  },
+
+  {
+    "kanji": "水",
+    "translation": "water",
+    "kun": [{"word": "みず"}],
+    "on": [{"word": "すい"}]
+  },
+
+  {
+    "kanji": "雨",
+    "translation": "rain",
+    "kun": [{"word": "あめ"}],
+    "on": [{"word": "う"}]
+  },
+
+  {
+    "kanji": "花",
+    "translation": "flower, blossom",
+    "kun": [{"word": "はな"}],
+    "on": [{"word": "か"}]
+  },
+
+  {
+    "kanji": "魚",
+    "translation": "fish",
+    "kun": [{"word": "さかな"},{"word": "うお"}],
+    "on": [{"word": "ぎょ"}]
+  },
+
+  {
+    "kanji": "空",
+    "translation": "sky, to become free, empty",
+    "kun": [{"word": "そら"},{"word": "あ/ける"},{"word": "から"}],
+    "on": [{"word": "くう"}]
+  },
+
+  {
+    "kanji": "火",
+    "translation": "fire",
+    "kun": [{"word": "ひ"}],
+    "on": [{"word": "か"}]
+  },
+
+  {
+    "kanji": "土",
+    "translation": "earth, ground",
+    "kun": [{"word": "つち"}],
+    "on": [{"word": "ど"},{"word": "と"}]
+  }
+]},
+
+{
+"sectionname": "time",
+"characters": [
+  {
+    "kanji": "間",
+    "translation": "time, time span",
+    "kun": [{"word": "あいだ"}],
+    "on": [{"word": "かん"},{"word": "けん"}]
+  },
+
+  {
+    "kanji": "分",
+    "translation": "part, minute, to divide, to understand",
+    "kun": [{"word": "わ/ける"},{"word": "わ/かれる"},{"word": "わ/かる"}],
+    "on": [{"word": "ぶん"},{"word": "ぶ"},{"word": "ふん"}]
+  },
+
+  {
+    "kanji": "時",
+    "translation": "time, hour",
+    "kun": [{"word": "とき"}],
+    "on": [{"word": "じ"}]
+  },
+
+  {
+    "kanji": "日",
+    "translation": "day, sun",
+    "kun": [{"word": "ひ"},{"word": "か"}],
+    "on": [{"word": "にち"},{"word": "じつ"}]
+  },
+
+  {
+    "kanji": "週",
+    "translation": "week",
+    "kun": [],
+    "on": [{"word": "しゅう"}]
+  },
+
+  {
+    "kanji": "月",
+    "translation": "month, moon",
+    "kun": [{"word": "つき"}],
+    "on": [{"word": "げつ"},{"word": "がつ"}]
+  },
+
+  {
+    "kanji": "年",
+    "translation": "year",
+    "kun": [{"word": "とし"}],
+    "on": [{"word": "ねん"}]
+  },
+
+  {
+    "kanji": "先",
+    "translation": "before, in future",
+    "kun": [{"word": "さき"}],
+    "on": [{"word": "せん"}]
+  },
+
+  {
+    "kanji": "来",
+    "translation": "to come",
+    "kun": [{"word": "く/る"},{"word": "きた/る"},{"word": "きた/す"}],
+    "on": [{"word": "らい"}]
+  },
+
+  {
+    "kanji": "毎",
+    "translation": "each, every",
+    "kun": [],
+    "on": [{"word": "まい"}]
+  },
+
+  {
+    "kanji": "今",
+    "translation": "now",
+    "kun": [{"word": "いま"}],
+    "on": [{"word": "こん"},{"word": "きん"}]
+  },
+
+  {
+    "kanji": "午",
+    "translation": "noon",
+    "kun": [],
+    "on": [{"word": "ご"}]
+  },
+
+  {
+    "kanji": "後",
+    "translation": "after, later, back, to stay behind",
+    "kun": [{"word": "あと"},{"word": "おく/れる"},{"word": "のち"}],
+    "on": [{"word": "ご"},{"word": "こう"}]
+  },
+
+  {
+    "kanji": "前",
+    "translation": "before",
+    "kun": [{"word": "まえ"}],
+    "on": [{"word": "ぜん"}]
+  },
+
+  {
+    "kanji": "半",
+    "translation": "half, middle, semi-",
+    "kun": [{"word": "なか/ば"}],
+    "on": [{"word": "はん"}]
+  }
+]},
+
+{
+"sectionname": "body",
+"characters": [
+  {
+    "kanji": "手",
+    "translation": "hand",
+    "kun": [{"word": "て"}],
+    "on": [{"word": "しゅ"}]
+  },
+
+  {
+    "kanji": "口",
+    "translation": "mouth",
+    "kun": [{"word": "くち"}],
+    "on": [{"word": "こう"},{"word": "く"}]
+  },
+
+  {
+    "kanji": "耳",
+    "translation": "ear",
+    "kun": [{"word": "みみ"}],
+    "on": [{"word": "じ"}]
+  },
+
+  {
+    "kanji": "足",
+    "translation": "foot, to be sufficient, to add",
+    "kun": [{"word": "あし"},{"word": "た/りる"},{"word": "た/す"}],
+    "on": [{"word": "そく"}]
+  },
+
+  {
+    "kanji": "目",
+    "translation": "eye",
+    "kun": [{"word": "め"}],
+    "on": [{"word": "もく"}]
+  }
+]},
+
+{
+"sectionname": "directions",
+"characters": [
+  {
+    "kanji": "上",
+    "translation": "above, upper",
+    "kun": [{"word": "うえ"},{"word": "かみ"},{"word": "あ/げる"},{"word": "あ/がる"}],
+    "on": [{"word": "しょう"},{"word": "じょう"}]
+  },
+
+  {
+    "kanji": "下",
+    "translation": "below, down",
+    "kun": [{"word": "しも"},{"word": "さ/げる"},{"word": "お/ろす"},{"word": "く/だる"}],
+    "on": [{"word": "か"},{"word": "げ"}]
+  },
+
+  {
+    "kanji": "左",
+    "translation": "left",
+    "kun": [{"word": "ひだり"}],
+    "on": [{"word": "さ"}]
+  },
+
+  {
+    "kanji": "右",
+    "translation": "right",
+    "kun": [{"word": "みぎ"}],
+    "on": [{"word": "う"},{"word": "ゆう"}]
+  },
+
+  {
+    "kanji": "西",
+    "translation": "west",
+    "kun": [{"word": "にし"}],
+    "on": [{"word": "せい"},{"word": "さい"}]
+  },
+
+  {
+    "kanji": "東",
+    "translation": "east",
+    "kun": [{"word": "ひがし"}],
+    "on": [{"word": "とう"}]
+  },
+
+  {
+    "kanji": "南",
+    "translation": "south",
+    "kun": [{"word": "みなみ"}],
+    "on": [{"word": "なん"}]
+  },
+
+  {
+    "kanji": "北",
+    "translation": "north",
+    "kun": [{"word": "きた"}],
+    "on": [{"word": "ほく"}]
+  },
+
+  {
+    "kanji": "中",
+    "translation": "inner, center, between",
+    "kun": [{"word": "なか"}],
+    "on": [{"word": "ちゅう"}]
+  },
+
+  {
+    "kanji": "外",
+    "translation": "outside, other, disconnect",
+    "kun": [{"word": "そと"},{"word": "ほか"},{"word": "はず/れる"},{"word": "はず/す"}],
+    "on": [{"word": "がい"},{"word": "げ"}]
+  }
+]},
+
+{
+"sectionname": "verbs",
+"characters": [
+  {
+    "kanji": "生",
+    "translation": "to live, to grow, to be born, raw",
+    "kun": [{"word": "い/きる"},{"word": "う/む"},{"word": "は/やす"},{"word": "なま"},{"word": "き"}],
+    "on": [{"word": "せい"},{"word": "しょう"}]
+  },
+
+  {
+    "kanji": "行",
+    "translation": "to walk. to go, to do, to carry out",
+    "kun": [{"word": "い/く"},{"word": "ゆ/く"},{"word": "おこな/う"}],
+    "on": [{"word": "こう"}]
+  },
+
+  {
+    "kanji": "飲",
+    "translation": "to drink",
+    "kun": [{"word": "の/む"}],
+    "on": [{"word": "いん"}]
+  },
+
+  {
+    "kanji": "食",
+    "translation": "to eat",
+    "kun": [{"word": "た/べる"},{"word": "く/る"},{"word": "く/らう"}],
+    "on": [{"word": "しょく"}]
+  },
+
+  {
+    "kanji": "書",
+    "translation": "to write",
+    "kun": [{"word": "か/く"}],
+    "on": [{"word": "しょ"}]
+  },
+
+  {
+    "kanji": "休",
+    "translation": "to rest",
+    "kun": [{"word": "やす/む"}],
+    "on": [{"word": "きゅう"}]
+  },
+
+  {
+    "kanji": "見",
+    "translation": "to see, to be visible, to show",
+    "kun": [{"word": "み/る"},{"word": "み/える"},{"word": "み/せる"}],
+    "on": [{"word": "けん"}]
+  },
+
+  {
+    "kanji": "言",
+    "translation": "word, to talk",
+    "kun": [{"word": "い/う"}],
+    "on": [{"word": "げん"},{"word": "ごん"}]
+  },
+
+  {
+    "kanji": "会",
+    "translation": "to meet, to come together, society",
+    "kun": [{"word": "あ/う"}],
+    "on": [{"word": "かい"},{"word": "え"}]
+  },
+
+  {
+    "kanji": "語",
+    "translation": "word, to talk",
+    "kun": [{"word": "かた/る"},{"word": "かた/らう"}],
+    "on": [{"word": "ご"}]
+  },
+
+  {
+    "kanji": "聞",
+    "translation": "to hear, to listen, to ask",
+    "kun": [{"word": "き/く"},{"word": "き/こえる"}],
+    "on": [{"word": "ぶん"},{"word": "もん"}]
+  },
+
+  {
+    "kanji": "立",
+    "translation": "to stand, to establish",
+    "kun": [{"word": "た/つ"},{"word": "た/てる"}],
+    "on": [{"word": "りつ"}]
+  },
+
+  {
+    "kanji": "話",
+    "translation": "speech, to talk, story, conversation",
+    "kun": [{"word": "はなし"},{"word": "はな/す"}],
+    "on": [{"word": "わ"}]
+  },
+
+  {
+    "kanji": "読",
+    "translation": "to read",
+    "kun": [{"word": "よ/む"}],
+    "on": [{"word": "どく"}]
+  },
+
+  {
+    "kanji": "入",
+    "translation": "to enter, to insert",
+    "kun": [{"word": "はい/る"},{"word": "い/る"},{"word": "い/れる"}],
+    "on": [{"word": "にゅう"}]
+  },
+
+  {
+    "kanji": "出",
+    "translation": "to leave, to get out. to take out",
+    "kun": [{"word": "だ/す"},{"word": "で/る"}],
+    "on": [{"word": "しゅつ"}]
+  },
+
+  {
+    "kanji": "買",
+    "translation": "to buy",
+    "kun": [{"word": "か/う"}],
+    "on": [{"word": "ばい"}]
+  }
+]},
+
+{
+"sectionname": "people",
+"characters": [
+  {
+    "kanji": "人",
+    "translation": "person",
+    "kun": [{"word": "ひと"}],
+    "on": [{"word": "じん"},{"word": "にん"}]
+  },
+
+  {
+    "kanji": "女",
+    "translation": "woman, female",
+    "kun": [{"word": "おんな"},{"word": "め"}],
+    "on": [{"word": "じょ"},{"word": "にょ"}]
+  },
+
+  {
+    "kanji": "男",
+    "translation": "man, male",
+    "kun": [{"word": "おとこ"}],
+    "on": [{"word": "だん"},{"word": "なん"}]
+  },
+
+  {
+    "kanji": "父",
+    "translation": "father",
+    "kun": [{"word": "ちち"}],
+    "on": [{"word": "ふ"}]
+  },
+
+  {
+    "kanji": "母",
+    "translation": "mother",
+    "kun": [{"word": "はは"}],
+    "on": [{"word": "ぼ"}]
+  },
+
+  {
+    "kanji": "友",
+    "translation": "friend",
+    "kun": [{"word": "とも"}],
+    "on": [{"word": "ゆう"}]
+  },
+
+  {
+    "kanji": "子",
+    "translation": "child",
+    "kun": [{"word": "こ"}],
+    "on": [{"word": "さん"},{"word": "す"}]
+  },
+
+  {
+    "kanji": "社",
+    "translation": "shinto shrine, society",
+    "kun": [{"word": "やしろ"}],
+    "on": [{"word": "しゃ"}]
+  },
+
+  {
+    "kanji": "名",
+    "translation": "name, reputation",
+    "kun": [{"word": "な"}],
+    "on": [{"word": "めい"},{"word": "みょう"}]
+  }
+]},
+
+{
+"sectionname": "size and quantity",
+"characters": [
+  {
+    "kanji": "小",
+    "translation": "small",
+    "kun": [{"word": "ちい/さい"},{"word": "こ"},{"word": "お"}],
+    "on": [{"word": "しょう"}]
+  },
+
+  {
+    "kanji": "大",
+    "translation": "big, a lot",
+    "kun": [{"word": "おお/きい"},{"word": "おお/い"}],
+    "on": [{"word": "だい"},{"word": "たい"}]
+  },
+
+  {
+    "kanji": "少",
+    "translation": "a little",
+    "kun": [{"word": "すこ/し"},{"word": "すく/ない"}],
+    "on": [{"word": "しょう"}]
+  },
+
+  {
+    "kanji": "多",
+    "translation": "many",
+    "kun": [{"word": "おお/い"}],
+    "on": [{"word": "た"}]
+  }
+]},
+
+{
+"sectionname": "shopping",
+"characters": [
+  {
+    "kanji": "円",
+    "translation": "circle, Yen, round",
+    "kun": [{"word": "まる/い"}],
+    "on": [{"word": "えん"}]
+  },
+
+  {
+    "kanji": "新",
+    "translation": "new",
+    "kun": [{"word": "あたら/しい"},{"word": "あら/た"},{"word": "にい"}],
+    "on": [{"word": "しん"}]
+  },
+
+  {
+    "kanji": "古",
+    "translation": "old, used",
+    "kun": [{"word": "ふる/い"}],
+    "on": [{"word": "こ"}]
+  },
+
+  {
+    "kanji": "何",
+    "translation": "what, how many, which",
+    "kun": [{"word": "なに"}],
+    "on": [{"word": "か"}]
+  },
+
+  {
+    "kanji": "金",
+    "translation": "gold, metal, money",
+    "kun": [{"word": "かね"}],
+    "on": [{"word": "きん"},{"word": "こん"}]
+  },
+
+  {
+    "kanji": "高",
+    "translation": "high, expensive, increase, quantity",
+    "kun": [{"word": "たか/い"},{"word": "たか/まる"},{"word": "たか/める"}],
+    "on": [{"word": "こう"}]
+  },
+
+  {
+    "kanji": "安",
+    "translation": "peace, cheap, safety",
+    "kun": [{"word": "やす/い"}],
+    "on": [{"word": "あん"}]
+  },
+
+  {
+    "kanji": "店",
+    "translation": "shop",
+    "kun": [{"word": "みせ"}],
+    "on": [{"word": "てん"}]
+  }
+]},
+
+{
+"sectionname": "travelling",
+"characters": [
+  {
+    "kanji": "国",
+    "translation": "country",
+    "kun": [{"word": "くに"}],
+    "on": [{"word": "こく"}]
+  },
+
+  {
+    "kanji": "車",
+    "translation": "car, wheel",
+    "kun": [{"word": "くるま"}],
+    "on": [{"word": "しゃ"}]
+  },
+
+  {
+    "kanji": "電",
+    "translation": "electricity",
+    "kun": [],
+    "on": [{"word": "でん"}]
+  },
+
+  {
+    "kanji": "駅",
+    "translation": "station",
+    "kun": [],
+    "on": [{"word": "えき"}]
+  },
+
+  {
+    "kanji": "道",
+    "translation": "street, path",
+    "kun": [{"word": "みち"}],
+    "on": [{"word": "どう"}]
+  }
+]},
+
+{
+"sectionname": "school",
+"characters": [
+  {
+    "kanji": "学",
+    "translation": "school, science, learning",
+    "kun": [{"word": "まな/ぶ"}],
+    "on": [{"word": "がく"}]
+  },
+
+  {
+    "kanji": "校",
+    "translation": "school",
+    "kun": [],
+    "on": [{"word": "こう"}]
+  },
+
+  {
+    "kanji": "気",
+    "translation": "soul, spirit",
+    "kun": [],
+    "on": [{"word": "き"},{"word": "け"}]
+  },
+
+  {
+    "kanji": "本",
+    "translation": "book, source, main-",
+    "kun": [{"word": "もと"}],
+    "on": [{"word": "ほん"}]
+  },
+
+  {
+    "kanji": "長",
+    "translation": "long, leader",
+    "kun": [{"word": "なが/い"}],
+    "on": [{"word": "ちょう"}]
+  }
+]},
+
+{
+"sectionname": "misc",
+"characters": [
+  {
+    "kanji": "白",
+    "translation": "white",
+    "kun": [{"word": "しろ/い"}],
+    "on": [{"word": "はく"},{"word": "びゃく"}]
+  }
+]}
+
+]

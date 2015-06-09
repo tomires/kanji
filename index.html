@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="kanji">
+<head>
+  <meta charset='utf-8'>
+  <title>kanji</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="StateController as page">
+<div ng-controller="TopicController as topic" id="base">
+
+<div class="btnfullscreen" onclick="toggleFullscreen(document.getElementById('base'))">F</div>
+
+<div class="coursepage" ng-show="page.isState(1)">
+  <img src="logo.svg"></img>
+  <div class="section" ng-repeat="section in topic.sections">
+    <div class="sectiontitle">
+      <h2>{{section.sectionname}}</h2>
+      <span class="btnlearn" ng-click="topic.selectSection($index) && page.learnSection()">learn</span>
+      <span class="btnpractice" ng-click="topic.selectSection($index) && page.practiceSection()">practice</span>
+    </div>
+    <div class="characters">
+      <div class="character" ng-repeat="character in section.characters">
+        {{character.kanji}}
+      </div>
+    </div>
+  </div>
+  <div class="footer">Made /w &lt;3 by tomires <a href="https://github.com/Tomires/kanji">G</a></div>
+</div>
+
+
+<div class="learningmode" ng-show="page.isState(2)">
+
+  <div class="progressbar" style="width: {{topic.barwidth}}%;"></div>
+  <div class="nowlearning">Now learning <b>{{topic.sections[topic.section].sectionname}}</b></div>
+  <div class="btnclose" ng-click="page.returnToCourse()">X</div>
+  <div class="btnprev" ng-show="topic.isNotFirstKanji()" ng-click="topic.prevKanji()">&lt;</div>
+  <div class="btnnext" ng-show="topic.isNotLastKanji()" ng-click="topic.nextKanji()">&gt;</div>
+
+  <div class="on">
+    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].on">{{item.word}}</div>
+  </div>
+
+  <div class="currentcard">
+    <div class="kanji">{{topic.sections[topic.section].characters[topic.kanji].kanji}}</div>
+    <div class="translation">{{topic.sections[topic.section].characters[topic.kanji].translation}}</div>
+  </div>
+
+  <div class="kun">
+    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].kun">{{item.word}}</div>
+  </div>
+
+  <div class="textinput" style="display: none;">
+    Practice this section
+  </div>
+
+</div>
+
+
+<div class="practicemode" ng-show="page.isState(3)">
+
+  <div class="progressbar" style="width: 40%"></div>
+
+  <div class="nowlearning">Now practicing <b>{{topic.sections[topic.section].sectionname}}</b></div>
+  <div class="btnclose" ng-click="page.returnToCourse()">X</div>
+
+  <div class="on">
+    <div class="item">がい</div>
+    <div class="item">げ</div>
+  </div>
+
+  <div class="currentcard">
+    <div class="kanji">外</div>
+    <div class="translation">outside, other, disconnect</div>
+  </div>
+
+  <div class="kun">
+    <div class="item">そと</div>
+    <div class="item">ほか</div>
+    <div class="item">はず/れる</div>
+    <div class="item">はず/す</div>
+  </div>
+
+  <div class="textinput">
+    <form>
+      <input type="text" value="" ng-model="question.userAnswer" />
+    </form>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+  <script type="text/javascript" src="dependencies/angular.min.js"></script>
+  <script type="text/javascript" src="dependencies/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="src/app.js"></script>
+  <script type="text/javascript" src="src/state.js"></script>
+  <script type="text/javascript" src="src/topic.js"></script>
+  <script type="text/javascript" src="src/fullscreen.js"></script>
+
+</body>
+</html>

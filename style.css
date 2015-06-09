@@ -1,0 +1,270 @@
+@font-face{
+	font-family: 'Franklin Gothic Book';
+	src: url('fonts/FranklinGothic-Book-webfont.eot');
+	src: url('fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/FranklinGothic-Book-webfont.woff') format('woff'),
+	     url('fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
+	     url('fonts/FranklinGothic-Book-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'Franklin Gothic Demi';
+	src: url('fonts/FranklinGothic-Demi-webfont.eot');
+	src: url('fonts/FranklinGothic-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/FranklinGothic-Demi-webfont.woff') format('woff'),
+	     url('fonts/FranklinGothic-Demi-webfont.ttf') format('truetype'),
+	     url('fonts/FranklinGothic-Demi-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'kanji';
+	src: url('fonts/kanji.eot');
+	src: url('fonts/kanji.eot?#iefix') format('embedded-opentype'),
+			url('fonts/kanji.woff') format('woff'),
+			url('fonts/kanji.ttf') format('truetype'),
+			url('fonts/kanji.svg#webfont') format('svg');
+}
+
+body{
+	background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Franklin Gothic Book';
+  font-size: 1.5em;
+  color: darkgray;
+}
+
+.progressbar{
+	background-color: darkgray;
+	height: 0.5em;
+  position: fixed;
+}
+
+.currentcard{
+  padding: 2%;
+  vertical-align: middle;
+  width: 15em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0% auto;
+  left: 0px;
+  right: 0px;
+}
+
+.kanji{
+  font-size: 7em;
+  text-align: center;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 0.2em;
+}
+
+.translation{
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.on{
+  position: fixed;
+  left: 15%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.kun{
+  position: fixed;
+  right: 15%;
+  text-align: right;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.item{
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  background-color: white;
+  box-shadow: 0px 5px 5px #CCC;
+  font-size: 1.5em;
+}
+
+.on .item{
+  border-left: 0.3em solid darkcyan;
+  color: darkcyan;
+  border-radius: 0.1em;
+}
+
+.kun .item{
+  border-right: 0.3em solid darkorange;
+  color: darkorange;
+  border-radius: 0.1em;
+}
+
+.xitem{
+
+}
+
+.textinput{
+  background-color: #FFF;
+  box-shadow: 0px 5px 5px #CCC;
+  width: 20em;
+  height: 2em;
+  position: fixed;
+  margin: 0% auto;
+  left: 0px;
+  right: 0px;
+  bottom: 2em;
+  border: 1px solid darkgray;
+}
+
+.textinput input{
+  border: 0px none;
+  font-family: 'Franklin Gothic Demi';
+  margin-top: 0.5em;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  background: none;
+}
+
+.nowlearning{
+  position: fixed;
+  text-align: center;
+  margin: 0% auto;
+  left: 0px;
+  right: 0px;
+  top: 2em;
+}
+
+.coursepage{
+  text-align: center;
+}
+
+.coursepage img{
+  width: 15%;
+  margin-top: 2em;
+}
+
+.coursepage .section{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.coursepage .characters{
+  width: 20em;
+  text-align: left;
+  margin-left: auto;
+}
+
+.coursepage .character{
+  font-size: 2em;
+  padding: 0.2em;
+  background-color: white;
+  margin: 0.2em;
+  box-shadow: 0px 5px 5px #CCC;
+  width: 1em;
+  display: inline-block;
+  border-radius: 0.1em;
+}
+
+.coursepage .sectiontitle{
+  margin-right: auto;
+  text-align: left;
+  float: left;
+  font-family: 'Franklin Gothic Demi';
+}
+
+.coursepage .sectiontitle h2{
+  margin: 0;
+  text-decoration: none;
+}
+
+.coursepage .btnlearn{
+  border-radius: 0.2em;
+  background-color: darkcyan;
+  font-family: 'Franklin Gothic Demi';
+  color: whitesmoke;
+  padding: 0.2em;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.coursepage .btnpractice{
+  border-radius: 0.2em;
+  background-color: darkorange;
+  font-family: 'Franklin Gothic Demi';
+  color: whitesmoke;
+  padding: 0.2em;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.coursepage .footer{
+  border-top: 1px solid lightgray;
+  padding: 1em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.coursepage .footer a{
+  text-decoration: none;
+  color: darkgray;
+  font-family: 'kanji';
+  float: right;
+}
+
+.btnprev{
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0% auto;
+  margin-left: 5%;
+  left: 0px;
+  cursor: pointer;
+  font-family: 'kanji';
+}
+
+.btnnext{
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0% auto;
+  margin-right: 5%;
+  right: 0px;
+  cursor: pointer;
+  font-family: 'kanji';
+}
+
+.btnclose{
+  position: absolute;
+  top: 2em;
+  right: 10%;
+  cursor: pointer;
+  font-family: 'kanji';
+  z-index: 500;
+}
+
+.btnfullscreen{
+  position: absolute;
+  top: 2em;
+  right: 5%;
+  cursor: pointer;
+  font-family: 'kanji';
+  z-index: 500;
+}
+
+#base{
+  background-color: whitesmoke;
+}
