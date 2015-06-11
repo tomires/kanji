@@ -58,7 +58,7 @@
 
 <div class="practicemode" ng-show="page.isState(3)">
 
-  <div class="progressbar" style="width: 40%"></div>
+  <div class="progressbar" style="width: 0%"></div>
 
   <div class="nowlearning">Now practicing <b>{{topic.sections[topic.section].sectionname}}</b></div>
   <div class="btnclose" ng-click="page.returnToCourse()">X</div>
@@ -71,6 +71,7 @@
   <div class="currentcard">
     <div class="kanji">{{topic.sections[topic.section].characters[topic.kanji].kanji}}</div>
     <div class="translation">{{topic.sections[topic.section].characters[topic.kanji].translation}}</div>
+    <div class="omedetou" ng-show="topic.congratulate"><span>O</span>おめでとう!</div>
   </div>
 
   <div class="kun">

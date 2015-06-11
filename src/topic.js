@@ -22,6 +22,7 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   this.guessedOn = [];
   this.guessedKun = [];
   this.userAnswer = '';
+  this.congratulate = 0;
 
   this.selectSection = function(xsection, mode){
     this.selectSectionKanji(xsection, 0);
@@ -74,6 +75,7 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
     this.guessedOn = [];
     this.guessedKun = [];
     this.userAnswer = '';
+    this.congratulate = 0;
     return true;
   }
 
@@ -83,6 +85,7 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
         if(this.guessedOn.indexOf(this.currKanjiOn[item]) == -1){
           this.guessedOn.push(this.currKanjiOn[item]);
           this.userAnswer = '';
+          this.checkIfDone();
           return true;
         }
       }
@@ -93,12 +96,19 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
         if(this.guessedKun.indexOf(this.currKanjiKun[item]) == -1){
           this.guessedKun.push(this.currKanjiKun[item]);
           this.userAnswer = '';
+          this.checkIfDone();
           return true;
         }
       }
     }
 
     return false;
+  }
+
+  this.checkIfDone = function(){
+    if(this.currKanjiKun.length == this.guessedKun.length
+    && this.currKanjiOn.length == this.guessedOn.length)
+      this.congratulate = 1;
   }
 
 }]);

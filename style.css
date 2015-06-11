@@ -299,3 +299,19 @@ body{
   font-family: 'kanji';
   z-index: 500;
 }
+
+.omedetou{
+	background-color: darkcyan;
+	padding: 0.2em;
+	text-align: center;
+	color: white;
+	border-radius: 1em;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.omedetou span{
+	font-family: 'kanji';
+	margin-right: 0.5em;
+}
