@@ -15,8 +15,23 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   this.kanji = 0;
   this.kanjiTotal = 0;
 
-  this.selectSection = function(xsection){
-    return this.selectSectionKanji(xsection, 0);
+  this.mode = 0; /* 0 - learning
+                    1 - practice */
+  this.currKanjiOn = [];
+  this.currKanjiKun = [];
+  this.guessedOn = [];
+  this.guessedKun = [];
+  this.userAnswer = '';
+
+  this.selectSection = function(xsection, mode){
+    this.selectSectionKanji(xsection, 0);
+
+    if(mode){ /* practice mode only */
+      this.kanji = parseInt(Math.random() * this.kanjiTotal);                   /* modify so it remembers previously picked kanji */
+      this.prepareLists();
+    }
+
+    return true;
   };
 
   this.selectSectionKanji = function(xsection, xkanji){
@@ -49,6 +64,41 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
 
   this.isNotLastKanji = function(){
     return this.kanji < (this.kanjiTotal - 1);
+  }
+
+  /* functions specific to practice mode */
+
+  this.prepareLists = function(){
+    this.currKanjiOn = this.sections[this.section].characters[this.kanji].on;
+    this.currKanjiKun = this.sections[this.section].characters[this.kanji].kun;
+    this.guessedOn = [];
+    this.guessedKun = [];
+    this.userAnswer = '';
+    return true;
+  }
+
+  this.validateEntry = function(){
+    for(item in this.currKanjiOn){
+      if(this.currKanjiOn[item] == this.userAnswer){                            /* implement a better comparison function */
+        if(this.guessedOn.indexOf(this.currKanjiOn[item]) == -1){
+          this.guessedOn.push(this.currKanjiOn[item]);
+          this.userAnswer = '';
+          return true;
+        }
+      }
+    }
+
+    for(item in this.currKanjiKun){
+      if(this.currKanjiKun[item] == this.userAnswer){                           /* implement a better comparison function */
+        if(this.guessedKun.indexOf(this.currKanjiKun[item]) == -1){
+          this.guessedKun.push(this.currKanjiKun[item]);
+          this.userAnswer = '';
+          return true;
+        }
+      }
+    }
+
+    return false;
   }
 
 }]);

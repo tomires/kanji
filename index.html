@@ -15,8 +15,8 @@
   <div class="section" ng-repeat="section in topic.sections" ng-init="sectionId = $index">
     <div class="sectiontitle">
       <h2>{{section.sectionname}}</h2>
-      <span class="btnlearn" ng-click="topic.selectSection(sectionId) && page.learnSection()">learn</span>
-      <span class="btnpractice" ng-click="topic.selectSection(sectionId) && page.practiceSection()">practice</span>
+      <span class="btnlearn" ng-click="topic.selectSection(sectionId, 0) && page.learnSection()">learn</span>
+      <span class="btnpractice" ng-click="topic.selectSection(sectionId, 1) && page.practiceSection()">practice</span>
     </div>
     <div class="characters">
       <div class="character" ng-repeat="character in section.characters" ng-init="kanjiId = $index" ng-click="topic.selectSectionKanji(sectionId, kanjiId) && page.learnSection()">
@@ -37,7 +37,7 @@
   <div class="btnnext" ng-show="topic.isNotLastKanji()" ng-click="topic.nextKanji()">&gt;</div>
 
   <div class="on">
-    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].on">{{item.word}}</div>
+    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].on">{{item}}</div>
   </div>
 
   <div class="currentcard">
@@ -46,7 +46,7 @@
   </div>
 
   <div class="kun">
-    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].kun">{{item.word}}</div>
+    <div class="item" ng-repeat="item in topic.sections[topic.section].characters[topic.kanji].kun">{{item}}</div>
   </div>
 
   <div class="textinput" style="display: none;">
@@ -64,25 +64,24 @@
   <div class="btnclose" ng-click="page.returnToCourse()">X</div>
 
   <div class="on">
-    <div class="item">がい</div>
-    <div class="item">げ</div>
+    <div class="item" ng-repeat="item in topic.guessedOn">{{item}}</div>
+    <div class="onremaining" ng-show="topic.currKanjiOn.length - topic.guessedOn.length">{{topic.currKanjiOn.length - topic.guessedOn.length}}</div>
   </div>
 
   <div class="currentcard">
-    <div class="kanji">外</div>
-    <div class="translation">outside, other, disconnect</div>
+    <div class="kanji">{{topic.sections[topic.section].characters[topic.kanji].kanji}}</div>
+    <div class="translation">{{topic.sections[topic.section].characters[topic.kanji].translation}}</div>
   </div>
 
   <div class="kun">
-    <div class="item">そと</div>
-    <div class="item">ほか</div>
-    <div class="item">はず/れる</div>
-    <div class="item">はず/す</div>
+    <div class="item" ng-repeat="item in topic.guessedKun">{{item}}</div>
+    <div class="kunremaining" ng-show="topic.currKanjiKun.length - topic.guessedKun.length">{{topic.currKanjiKun.length - topic.guessedKun.length}}</div>
   </div>
 
+
   <div class="textinput">
-    <form>
-      <input type="text" value="" ng-model="question.userAnswer" />
+    <form name="answerForm" ng-submit="topic.validateEntry()">
+      <input type="text" ng-model="topic.userAnswer" />
     </form>
   </div>
 
