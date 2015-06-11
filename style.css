@@ -1,3 +1,7 @@
+html{ /* toss a bucket of whitesmoke at Chrome's fullscreen mode */
+	background-color: whitesmoke;
+}
+
 @font-face{
 	font-family: 'Franklin Gothic Book';
 	src: url('fonts/FranklinGothic-Book-webfont.eot');
@@ -263,8 +267,4 @@ body{
   cursor: pointer;
   font-family: 'kanji';
   z-index: 500;
-}
-
-#base{
-  background-color: whitesmoke;
 }

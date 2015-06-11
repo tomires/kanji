@@ -6,9 +6,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="StateController as page">
-<div ng-controller="TopicController as topic" id="base">
+<div ng-controller="TopicController as topic">
 
-<div class="btnfullscreen" onclick="toggleFullscreen(document.getElementById('base'))">F</div>
+<div class="btnfullscreen" onclick="toggleFullscreen(document.documentElement)">F</div>
 
 <div class="coursepage" ng-show="page.isState(1)">
   <img src="logo.svg"></img>
