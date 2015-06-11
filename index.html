@@ -12,14 +12,14 @@
 
 <div class="coursepage" ng-show="page.isState(1)">
   <img src="logo.svg"></img>
-  <div class="section" ng-repeat="section in topic.sections">
+  <div class="section" ng-repeat="section in topic.sections" ng-init="sectionId = $index">
     <div class="sectiontitle">
       <h2>{{section.sectionname}}</h2>
-      <span class="btnlearn" ng-click="topic.selectSection($index) && page.learnSection()">learn</span>
-      <span class="btnpractice" ng-click="topic.selectSection($index) && page.practiceSection()">practice</span>
+      <span class="btnlearn" ng-click="topic.selectSection(sectionId) && page.learnSection()">learn</span>
+      <span class="btnpractice" ng-click="topic.selectSection(sectionId) && page.practiceSection()">practice</span>
     </div>
     <div class="characters">
-      <div class="character" ng-repeat="character in section.characters">
+      <div class="character" ng-repeat="character in section.characters" ng-init="kanjiId = $index" ng-click="topic.selectSectionKanji(sectionId, kanjiId) && page.learnSection()">
         {{character.kanji}}
       </div>
     </div>

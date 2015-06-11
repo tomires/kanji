@@ -16,10 +16,14 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   this.kanjiTotal = 0;
 
   this.selectSection = function(xsection){
+    return this.selectSectionKanji(xsection, 0);
+  };
+
+  this.selectSectionKanji = function(xsection, xkanji){
     this.section = xsection;
-    this.kanji = 0;
+    this.kanji = xkanji;
     this.kanjiTotal = this.sections[this.section].characters.length;
-    this.barwidth = 0;
+    this.barwidth = 100 * (this.kanji / (this.kanjiTotal - 1));
     return true;
   };
 

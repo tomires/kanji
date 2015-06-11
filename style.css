@@ -179,6 +179,12 @@ body{
   border-radius: 0.1em;
 }
 
+.coursepage .character:hover{
+	background-color: darkcyan;
+	color: white;
+	cursor: pointer;
+}
+
 .coursepage .sectiontitle{
   margin-right: auto;
   text-align: left;
@@ -195,7 +201,7 @@ body{
   border-radius: 0.2em;
   background-color: darkcyan;
   font-family: 'Franklin Gothic Demi';
-  color: whitesmoke;
+  color: white;
   padding: 0.2em;
   font-size: 0.8em;
   cursor: pointer;
@@ -205,7 +211,7 @@ body{
   border-radius: 0.2em;
   background-color: darkorange;
   font-family: 'Franklin Gothic Demi';
-  color: whitesmoke;
+  color: white;
   padding: 0.2em;
   font-size: 0.8em;
   cursor: pointer;
