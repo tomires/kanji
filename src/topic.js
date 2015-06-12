@@ -24,10 +24,10 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   this.userAnswer = '';
   this.congratulate = 0;
 
-  this.selectSection = function(xsection, mode){
+  this.selectSection = function(xsection, xmode){
     this.selectSectionKanji(xsection, 0);
 
-    if(mode){ /* practice mode only */
+    if(xmode){ /* practice mode only */
       this.kanji = parseInt(Math.random() * this.kanjiTotal);                   /* modify so it remembers previously picked kanji */
       this.prepareLists();
     }
@@ -80,8 +80,11 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   }
 
   this.validateEntry = function(){
+    if(this.congratulate)
+      this.selectSection(this.section, 1);
+
     for(item in this.currKanjiOn){
-      if(this.currKanjiOn[item] == this.userAnswer){                            /* implement a better comparison function */
+      if(this.parseAndCompare(this.currKanjiOn[item])){
         if(this.guessedOn.indexOf(this.currKanjiOn[item]) == -1){
           this.guessedOn.push(this.currKanjiOn[item]);
           this.userAnswer = '';
@@ -92,7 +95,7 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
     }
 
     for(item in this.currKanjiKun){
-      if(this.currKanjiKun[item] == this.userAnswer){                           /* implement a better comparison function */
+      if(this.parseAndCompare(this.currKanjiKun[item])){
         if(this.guessedKun.indexOf(this.currKanjiKun[item]) == -1){
           this.guessedKun.push(this.currKanjiKun[item]);
           this.userAnswer = '';
@@ -109,6 +112,19 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
     if(this.currKanjiKun.length == this.guessedKun.length
     && this.currKanjiOn.length == this.guessedOn.length)
       this.congratulate = 1;
+  }
+
+  this.parseAndCompare = function(xcurrKanji){
+    var kanjiParts = xcurrKanji.split('/');
+
+    if(this.userAnswer == kanjiParts[0]) return true;
+
+    else if(kanjiParts.length > 1
+      && (this.userAnswer == kanjiParts[0].concat(kanjiParts[1]))
+      || (this.userAnswer == kanjiParts[0].concat('/').concat(kanjiParts[1])))
+      return true;
+
+    return false;
   }
 
 }]);
