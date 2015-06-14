@@ -23,12 +23,19 @@ angular.module('kanji').controller('TopicController', ['$http','$window', functi
   this.guessedKun = [];
   this.userAnswer = '';
   this.congratulate = 0;
+  this.previouslyPicked = [];
 
   this.selectSection = function(xsection, xmode){
     this.selectSectionKanji(xsection, 0);
 
     if(xmode){ /* practice mode only */
-      this.kanji = parseInt(Math.random() * this.kanjiTotal);                   /* modify so it remembers previously picked kanji */
+      if(this.previouslyPicked.length == this.kanjiTotal)
+        this.previouslyPicked = [];
+
+      while(this.previouslyPicked.indexOf(this.kanji) != -1)
+        this.kanji = parseInt(Math.random() * this.kanjiTotal);
+
+      this.previouslyPicked.push(this.kanji);
       this.prepareLists();
     }
 
